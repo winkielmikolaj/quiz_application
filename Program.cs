@@ -19,8 +19,9 @@
             //app logic
             Console.WriteLine(q1);
             string userAnswers1 = Console.ReadLine();
-            if (userAnswers1 == a1)
+            if (userAnswers1.Trim().ToLower() == a1.ToLower())
             {
+                Console.WriteLine("Correct!");
                 score = score + 1;
             }
             else
@@ -31,7 +32,7 @@
 
             Console.WriteLine(q2);
             string userAnswers2 = Console.ReadLine();
-            if (userAnswers2 == a2)
+            if (userAnswers2.Trim().ToLower() == a2.ToLower())
             {
                 Console.WriteLine("Correct!");
                 score = score +1;
@@ -45,7 +46,7 @@
 
             Console.WriteLine(q3);
             string userAnswers3 = Console.ReadLine();
-            if (userAnswers3 == a3)
+            if (userAnswers3.Trim().ToLower() == a3.ToLower())
             {
                 Console.WriteLine("Correct!");
                 score = score + 1;
